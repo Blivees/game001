@@ -1,6 +1,6 @@
 extends Control
 
-const GAME_SCENE := "res://testscene.tscn"
+const GAME_SCENE := "res://Scenes/level1.tscn"
 
 
 func _ready() -> void:
