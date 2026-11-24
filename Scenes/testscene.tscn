@@ -41,3 +41,6 @@ shape = SubResource("RectangleShape2D_fjkfs")
 [node name="Sprite2D" type="Sprite2D" parent="ground" unique_id=684836214]
 scale = Vector2(15.5390625, 1.3671875)
 texture = ExtResource("2_nes3m")
+
+[node name="AiPet" type="CharacterBody2D" parent="." unique_id=601490675]
+position = Vector2(853, 533)
