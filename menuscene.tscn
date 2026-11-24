@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://dngxg2bykde30"]
 
 [ext_resource type="Script" uid="uid://5dxrj0asvry8" path="res://GDscripts/menu.gd" id="1_menu"]
-[ext_resource type="Texture2D" uid="uid://q3nrl2rc8e3o" path="res://Scenes/menu-background.png" id="2_background"]
+[ext_resource type="Texture2D" uid="uid://q3nrl2rc8e3o" path="res://Assets/Sprites/menu-background.png" id="2_background"]
+
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_normal"]
 bg_color = Color(0.98, 0.98, 0.98, 1)
