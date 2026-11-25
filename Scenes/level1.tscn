@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://pwaeh76yp7vk" path="res://GDscripts/player.gd" id="1_c5erv"]
 [ext_resource type="Texture2D" uid="uid://tsoiuus4i6ym" path="res://Assets/Sprites/player.png" id="2_c5erv"]
 [ext_resource type="Texture2D" uid="uid://y76wwbr02x12" path="res://Assets/Sprites/空白.png" id="3_y4dr7"]
+[ext_resource type="PackedScene" path="res://Scenes/level_sense.tscn" id="4_level_sense"]
 
 [sub_resource type="Animation" id="Animation_lyd6k"]
 length = 0.001
@@ -206,3 +207,7 @@ shape = SubResource("CircleShape2D_didp7")
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1957745163]
 tile_map_data = PackedByteArray("AAD//wYAAAAAAAAAAAAAAAYAAAAAAAAAAAABAAYAAAAAAAAAAAACAAYAAAAAAAAAAAADAAYAAAAAAAAAAAAEAAYAAAAAAAAAAAAFAAYAAAAAAAAAAAAGAAYAAAAAAAAAAAAHAAYAAAAAAAAAAAAIAAYAAAAAAAAAAAAJAAYAAAAAAAAAAAAKAAYAAAAAAAAAAAALAAYAAAAAAAAAAAAMAAYAAAAAAAAAAAANAAYAAAAAAAAAAAAOAAYAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_4wht7")
+
+[node name="Level Sense" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_level_sense")]
+visible = false
+player = NodePath("../Player")
