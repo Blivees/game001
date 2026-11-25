@@ -22,7 +22,7 @@ const ANIM_CLIMB = "climb"
 
 @export var coyote_time: float = 0.08
 @export var jump_buffer: float = 0.06
-@export var land_lock_time: float = 0.08
+@export var land_lock_time: float = 0.03
 @export var crouch_freeze_frame: int = 1
 
 @export var crouch_shape: RectangleShape2D

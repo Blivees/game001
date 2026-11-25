@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://dngxg2bykde30"]
 
 [ext_resource type="Script" uid="uid://5dxrj0asvry8" path="res://GDscripts/menu.gd" id="1_menu"]
-[ext_resource type="Texture2D" uid="uid://q3nrl2rc8e3o" path="res://Assets/Sprites/menu-background.png" id="2_background"]
-
+[ext_resource type="Texture2D" uid="uid://q3nrl2rc8e3o" path="res://Assets/background/menu_background.png" id="2_background"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_normal"]
 bg_color = Color(0.98, 0.98, 0.98, 1)
@@ -124,8 +123,9 @@ focus_neighbor_top = NodePath("../LoadGame")
 mouse_default_cursor_shape = 2
 text = "退出游戏"
 
-[node name="MenuStatus" type="Label" parent="."]
+[node name="MenuStatus" type="Label" parent="." unique_id=746100465]
 layout_mode = 1
+anchors_preset = -1
 anchor_left = 0.587
 anchor_top = 0.497
 anchor_right = 0.587
@@ -134,7 +134,6 @@ offset_left = -260.0
 offset_top = 197.0
 offset_right = 260.0
 offset_bottom = 245.0
-mouse_filter = 2
 theme_override_colors/font_color = Color(0.98, 0.98, 0.98, 1)
 theme_override_colors/font_outline_color = Color(0.08, 0.11, 0.12, 1)
 theme_override_constants/outline_size = 6
